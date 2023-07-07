@@ -1,0 +1,33 @@
+<header>
+  <div class="container">
+    <div class="head-section">
+      <span id="site-title">Dummy Title</span>
+    </div>
+    <div class="head-section"></div>
+    <div class="head-section">
+      <div class="user-icon" [matMenuTriggerFor]="menu">
+        <span>JC</span>
+      </div>
+      <mat-menu #menu="matMenu">
+        <button
+          mat-menu-item
+          style="width: 10rem; height: 0.5rem; min-height: 2.5rem"
+        >
+          Profile
+        </button>
+        <button
+          mat-menu-item
+          style="width: 10rem; height: 0.5rem; min-height: 2.5rem"
+        >
+          Saved
+        </button>
+        <button
+          mat-menu-item
+          style="width: 10rem; height: 0.5rem; min-height: 2.5rem"
+        >
+          Log Out
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</header>

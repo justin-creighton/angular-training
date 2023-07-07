@@ -1,0 +1,38 @@
+footer {
+    height: 3rem;
+    width: 100%;
+    background: #323131;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid white;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+
+        .footer-section {
+            position: relative;
+            height: 100%;
+
+            #copyright {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+
+            #app-version {
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                color: white;
+            }
+
+        }
+    }
+}

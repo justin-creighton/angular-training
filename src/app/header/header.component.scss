@@ -1,0 +1,53 @@
+header {
+    height: 4rem;
+    width: 100%;
+    background: #323131;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid white;
+
+    .container {
+        display: grid;
+        grid-template-columns: 20% auto 10%;
+        height: 100%;
+
+        .head-section {
+            position: relative;
+            height: 100%;
+
+            #site-title {
+                position: absolute;
+                top: 50%;
+                left: 1rem;
+                transform: translateY(-50%);
+                color: white;
+                font-size: 1.4rem;
+            }
+
+            .user-icon {
+                height: 2.7rem;
+                width: 2.7rem;
+                background: rgb(0, 170, 255);
+                color: white;
+                border-radius: 50%;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+        
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+::ng-deep .cdk-overlay-container .mat-mdc-menu-panel {
+    margin-top: 1rem;
+}
